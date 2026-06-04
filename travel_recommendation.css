@@ -136,3 +136,46 @@
 .content button:hover {
     opacity: 0.9;
 }
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.result-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.result-card img {
+    width: 200px;
+    
+    object-fit: cover;
+}
+
+.result-card-content {
+    padding: 15px;
+}
+
+.result-card h3 {
+    margin-bottom: 10px;
+}
+
+.result-card p {
+    line-height: 1.5;
+}
+
+.visit-btn {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
