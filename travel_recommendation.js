@@ -68,7 +68,10 @@ function searchRecommendations() {
 
     // Country / Countries
     else if (keyword === 'country' || keyword === 'countries') {
-        results = travelData.countries;
+         results = [];
+
+        travelData.countries.forEach(country => {
+        results.push(...country.cities)});
     }
 
     displayResults(results);
@@ -88,6 +91,7 @@ function displayResults(results) {
     }
 
      results.forEach(place => {
+        document.getElementById('f-content').innerHTML ='';
 
         const card = document.createElement('div');
 
